@@ -1,7 +1,3 @@
-/* =======================================================
-   EDIT BAGIAN INI SESUAI DIRIMU DAN DIA
-   Tambah atau kurangi foto sebebasnya di array FOTOS di bawah.
-======================================================= */
 const NAMA_PENERIMA = "Sayangku";
 const NAMA_PENGIRIM = "Aku";
 
@@ -22,9 +18,7 @@ Makasih udah jadi bagian dari cerita ini. Aku sayang kamu, hari ini dan hari-har
 
 const TANDA_TANGAN = `— ${NAMA_PENGIRIM}`;
 
-/* =======================================================
-   DARI SINI KE BAWAH: LOGIKA APLIKASI
-======================================================= */
+
 const cameraBtn = document.getElementById("camera-btn");
 const flash = document.getElementById("flash");
 const polaroidScene = document.getElementById("polaroid-scene");
@@ -34,7 +28,6 @@ const letterSignature = document.getElementById("letter-signature");
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/* ---------- LAMPU STRING DI ATAS ---------- */
 const stringLights = document.getElementById("string-lights");
 for (let i = 0; i < 14; i++) {
   const dot = document.createElement("span");
@@ -43,7 +36,7 @@ for (let i = 0; i < 14; i++) {
   stringLights.appendChild(dot);
 }
 
-/* ---------- BANGUN ELEMEN POLAROID DARI ARRAY FOTOS (GAYA GRID) ---------- */
+
 FOTOS.forEach((foto, i) => {
   const item = document.createElement("div");
   item.className = "polaroid-item";
@@ -71,7 +64,7 @@ FOTOS.forEach((foto, i) => {
 const semuaInner = polaroidGrid.querySelectorAll(".polaroid-item-inner");
 const semuaImg = polaroidGrid.querySelectorAll(".photo-frame img");
 
-/* ---------- EFEK MENGETIK ---------- */
+
 function ketikPesan(teks, elemen, kecepatan = 24) {
   elemen.textContent = "";
   let i = 0;
@@ -96,7 +89,7 @@ function tunggu(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-/* ---------- KLIK KAMERA: FLASH -> POLAROID SATU PER SATU -> SURAT ---------- */
+
 async function ambilPotret() {
   cameraBtn.classList.add("used");
   flash.classList.add("aktif");
@@ -120,9 +113,7 @@ async function ambilPotret() {
 
 cameraBtn.addEventListener("click", ambilPotret, { once: true });
 
-/* =======================================================
-   MUSIK LATAR (VINYL)
-======================================================= */
+
 const musik = document.getElementById("bg-music");
 const vinylBtn = document.getElementById("vinyl-btn");
 let musikSiap = true;
@@ -150,9 +141,7 @@ vinylBtn.addEventListener("click", () => {
   musik.paused ? putarMusik() : jedaMusik();
 });
 
-/* =======================================================
-   PARTIKEL DEBU HANGAT MELAYANG (CANVAS)
-======================================================= */
+
 const canvas = document.getElementById("dust-canvas");
 const ctx = canvas.getContext("2d");
 let motes = [];
