@@ -2,12 +2,12 @@ const NAMA_PENERIMA = "Sayangku";
 const NAMA_PENGIRIM = "Aku";
 
 const FOTOS = [
-  { file: "foto1.jpg", caption: "malam waktu kita duduk di teras itu" },
-  { file: "foto2.jpg", caption: "hari pertama kita ketemu" },
-  { file: "foto3.jpg", caption: "waktu kamu ketawa sampai lupa foto" },
-  { file: "foto4.jpg", caption: "momen kecil yang aku suka" },
-  { file: "foto5.jpg", caption: "ganti dengan kenanganmu sendiri" },
-  { file: "foto6.jpg", caption: "ganti dengan kenanganmu sendiri" }
+  { file: "my1.jpg.jpeg", caption: "malam waktu kita duduk di teras itu" },
+  { file: "my2.jpg.jpeg", caption: "hari pertama kita ketemu" },
+  { file: "my3.jpg.jpeg", caption: "waktu kamu ketawa sampai lupa foto" },
+  { file: "my4.jpg.jpeg", caption: "momen kecil yang aku suka" },
+  { file: "my5.jpg.jpeg", caption: "ganti dengan kenanganmu sendiri" },
+  { file: "foto6.jpg.jpeg", caption: "ganti dengan kenanganmu sendiri" }
 ];
 
 const PESAN = `Aku suka caranya kamar ini terasa lebih hangat kalau ada kamu, ${NAMA_PENERIMA}. Kayak lampu yang nyala pelan tapi cukup buat bikin semuanya kerasa nyaman.
