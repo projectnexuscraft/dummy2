@@ -1,4 +1,4 @@
-/* ============ TOKEN WARNA & TIPOGRAFI ============ */
+
 :root{
   --wood-dark:#211710;
   --wood-mid:#3b2a1d;
@@ -28,7 +28,7 @@ html,body{
   pointer-events:none;
 }
 
-/* ============ RUANGAN ============ */
+
 .room{
   position:relative;
   min-height:100vh;
@@ -89,7 +89,7 @@ html,body{
   z-index:2;
 }
 
-/* ============ INTRO ============ */
+
 .intro{
   position:relative;
   z-index:3;
@@ -117,7 +117,6 @@ html,body{
   margin:0;
 }
 
-/* ============ TOMBOL KAMERA ============ */
 .camera-btn{
   position:relative;
   z-index:3;
@@ -147,7 +146,6 @@ html,body{
 }
 .camera-btn.used{ display:none; }
 
-/* ============ EFEK FLASH ============ */
 .flash{
   position:fixed; inset:0;
   background:#fff;
@@ -164,7 +162,7 @@ html,body{
   100%{ opacity:0; }
 }
 
-/* ============ ADEGAN POLAROID & SURAT ============ */
+
 .polaroid-scene{
   position:relative;
   z-index:3;
@@ -264,7 +262,7 @@ html,body{
   margin-top:10px;
 }
 
-/* ============ LANTAI ============ */
+
 .floor{
   position:absolute;
   bottom:0; left:0; right:0;
@@ -275,7 +273,7 @@ html,body{
   z-index:0;
 }
 
-/* ============ TOMBOL MUSIK (VINYL) ============ */
+
 .vinyl-btn{
   position:fixed;
   right:24px; bottom:24px;
@@ -306,7 +304,7 @@ html,body{
   to{ transform:rotate(360deg); }
 }
 
-/* ============ RESPONSIF ============ */
+
 @media (max-width:520px){
   .room{ padding:12vh 6vw 6vh; }
   .polaroid-grid{ grid-template-columns:repeat(auto-fit, minmax(110px, 130px)); gap:18px 12px; }
@@ -315,7 +313,7 @@ html,body{
   .vinyl-btn{ right:14px; bottom:14px; width:48px; height:48px; }
 }
 
-/* ============ HORMATI REDUCED MOTION ============ */
+
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
 }
